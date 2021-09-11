@@ -17,7 +17,7 @@ mv chlogin.py ~/../chroot
 mv chpass.py ~/../chroot
 mv login* ~/../boot
 mv pass.py ~/../boot
-mv compilers ~/../chroot
+mv compilers* ~/../chroot
 mv contacts.py ~/../chroot
 mv file* ~/../chroot
 mv games* ~/../chroot
@@ -62,7 +62,9 @@ mv ofaa.py ~/../chroot
 mv ofte.py ~/../chroot
 mv ssh.py ~/../chroot
 mv atilo $PREFIX/bin
-mv atilo* ~/../chroot
+mv atilo-* ~/../chroot
+mv exec.py ~/../chroot
+mv system ~/../system
 echo "#!/bin/bash" > ~/../usr/bin/login
 echo "python3 /data/data/com.termux/files/boot/grub.py" >> ~/../usr/bin/login
 cd ~
