@@ -4,17 +4,17 @@
 int main() {
 	int a;
 
-	printf(ANSI_COLOR_RED    "WARNING! YOU STARTED RECOVERY MODE!" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_RED    "BE CAREFUL BECAUSE YOU CAN DESTROY YOUR SYSTEM!" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_CYAN   "==================================================" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_CYAN   "| N | Option                               | Root |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_RED    "| 1 | Shutdown Mobile                      | Y    |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_RED    "| 2 | Bootloop Mobile (dont destroy mobile | Y    |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_RED    "|   | bootfs, just calling bootloop)       |      |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_GREEN  "| 3 | Run my script                        | N    |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_GREEN  "| 4 | Exit to GRUB                         | N    |" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_CYAN   "===================================================" ANSI_COLOR_RESET "\n");
-	printf(ANSI_COLOR_RED    "Select your compiler: ");
+	puts(ANSI_COLOR_RED    "WARNING! YOU STARTED RECOVERY MODE!");
+	puts(ANSI_COLOR_RED    "BE CAREFUL BECAUSE YOU CAN DESTROY YOUR SYSTEM!");
+	puts(ANSI_COLOR_CYAN   "==================================================");
+	puts(ANSI_COLOR_CYAN   "| N | Option                               | Root |");
+	puts(ANSI_COLOR_RED    "| 1 | Shutdown Mobile                      | Y    |");
+	puts(ANSI_COLOR_RED    "| 2 | Bootloop Mobile (dont destroy mobile | Y    |");
+	puts(ANSI_COLOR_RED    "|   | bootfs, just calling bootloop)       |      |");
+	puts(ANSI_COLOR_GREEN  "| 3 | Run my script                        | N    |");
+	puts(ANSI_COLOR_GREEN  "| 4 | Exit to GRUB                         | N    |");
+	puts(ANSI_COLOR_CYAN   "===================================================");
+	puts(ANSI_COLOR_RED    "Select your compiler: ");
 	scanf("%d", &a);
 
 	switch(a) {
